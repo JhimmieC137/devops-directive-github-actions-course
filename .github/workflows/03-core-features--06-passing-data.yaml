@@ -33,4 +33,4 @@ jobs:
         run: |
           echo "Value from producer:        ${{ needs.producer.outputs.foo }}"
           # echo "FOO in consumer:            ${FOO:-<UNSET>}"
-          echo "FOO in consumer:            $GITHUB_ENV"
+          echo "FOO in consumer:            $GITHUB_OUTPUT"
